@@ -1,0 +1,56 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #faeec1;
+  width: 90vw;
+  height: 90vh;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 70px;
+  margin-bottom: 10px;
+  color: #173381;
+}
+
+#eng {
+  font-size: 8vw;
+  margin-bottom: 0;
+}
+
+#wait {
+  font-size: 5vw;
+}
+
+#remainingTime {
+  font-size: 20vw;
+  width: 35vw;
+  text-align: right;
+  color: #faeec1;
+  background-color: #51a5bf;
+  border-radius: 20px;
+}
+
+.flex {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+#time {
+  font-size: 5vw;
+}
