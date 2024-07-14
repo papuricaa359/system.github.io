@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情報工学科三年</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style/it3.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>情報工学科三年へ<br>ようこそ</h1>
+            <nav>
+                <ul>
+                    <li><a href="#yakisoba">焼きそば</a></li>
+                    <li><a href="#roller-coaster">トイストーリーマニア！</a></li>
+                    <li><a href="#gallery">ギャラリー</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="yakisoba" class="event-section">
+            <div class="container">
+                <h2>焼きそば</h2>
+                <img src="img/yakisoba.jpg" alt="焼きそば" style="max-width: 100%; border-radius: 10px;">
+                <p>美味しい焼きそばを提供します。また、目玉焼きをトッピングで追加できます。お楽しみください。</p>
+                <ul>
+                    <li>営業時間:10:00~17:00</li>
+                    <li>場所: 中庭</li>
+                    <li>価格: 500円/皿(目玉焼き: 50円/個)</li>
+                </ul>
+                <button onclick="window.location.href='yakisobatop.html';">モバイルオーダー</button>
+            </div>
+        </section>
+        <section id="roller-coaster" class="event-section alternate">
+            <div class="container">
+                <h2>トイストーリーマニア！</h2>
+                <img src="img/mania.jpg" alt="トイストーリーマニア！" style="max-width: 100%; border-radius: 10px;">
+                <p>ウッディが広げた大きな口から中へ進むと、いつのまにかおもちゃの大きさになっちゃった?!アンディのベッドの下で、おもちゃの世界のシューティングゲームを楽しもう！</p>
+                <ul>
+                    <li>営業時間:10:00~17:00</li>
+                    <li>場所: A棟4階情報工学科三年教室</li>
+                    <li>価格: 無料</li>
+                </ul>
+                <button onclick="window.location.href='fastpasstop.html';">ファストパス</button>
+            </div>
+        </section>
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2>ギャラリー</h2>
+                <div class="gallery">
+                    <div class="gallery-container">
+                        <img src="img/egg.jpg" alt="Gallery Image 1">
+                        <img src="img/yakisoba.jpg" alt="Gallery Image 2">
+                        <img src="img/enter.jpg" alt="Gallery Image 3">
+                        <img src="img/mania.jpg" alt="Gallery Image 4">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>情報工学科三年</p>
+        </div>
+    </footer>
+    <script src="script/it3.js">
+
+    </script>
+</body>
+
+</html>
