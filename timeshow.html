@@ -9,20 +9,46 @@
 </head>
 
 <body onload="updateRemainingTime()">
-  <div class="card">
-    <h1 id="eng">STANDBY ENTRANCE</h1>
-    <h1>スタンバイ・エントランス</h1>
-    <h1 id="eng">=====WAIT TIME=====</h1>
-    <h1 id="wait">ここからの待ち時間</h1>
-    <div class="flex">
-      <h1 id="time">MIN</h1>
-      <div class="wait-time" id="remainingTime"></div>
-      <h1 id="time">分</h1>
+  <div class="tablet">
+    <div class="card">
+      <h1 id="eng">STANDBY ENTRANCE</h1>
+      <h1>スタンバイ・エントランス</h1>
+      <h1 id="eng">=====WAIT TIME=====</h1>
+      <h1 id="wait">ここからの待ち時間</h1>
+      <div class="flex">
+        <h1 id="time">MIN</h1>
+        <div class="wait-time" id="remainingTime"></div>
+        <h1 id="time">分</h1>
+      </div>
+    </div>
+  </div>
+  <div class="smartphone">
+    <img src="img/mania.jpg">
+    <div class="content">
+      <p id="support"><b>提供：大谷一平ちゃん</b></p>
+      <p id="place">A棟4階A44 情報工学科三年教室</p>
+      <h2 id="name">トイ・ストーリー・マニア！</h2>
+      <div class="box">
+        <div class="flex wait">
+          <div class="wait-time" id="waitTimesmart"></div>
+          <p id="time">分待ち</p>
+        </div>
+        <p id="open">9:00～17:00</p>
+        <p>運営中</p>
+        <div class="button flex">
+          <a href="it3.html" id="soldright">
+            <div><p>トップに戻る</p></div>
+          </a>
+          <a href="fastpasstop.html">
+            <div><img src="img/logo.png"><p>ファストパス</p></div>
+          </a>
+        </div>
+      </div>
+      <p id="fotter">トラムに乗って、ウッディやバズたちと一緒にシューティングゲームを楽しもう！</p>
     </div>
   </div>
 
-  <script src="script/timeshow.js">
-  </script>
+  <script src="script/timeshow.js"></script>
 </body>
 
 </html>
