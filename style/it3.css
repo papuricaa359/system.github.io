@@ -221,6 +221,7 @@ footer p {
 
     .event-section button,
     .gallery-section button {
+        margin-top:5px;
         font-size: 0.9rem;
     }
 }
