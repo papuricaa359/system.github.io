@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>トイストーリーマニア待ち時間</title>
+  <link rel="stylesheet" href="style/timeshow.css">
+</head>
+
+<body onload="updateRemainingTime()">
+  <div class="card">
+    <h1 id="eng">STANDBY ENTRANCE</h1>
+    <h1>スタンバイ・エントランス</h1>
+    <h1 id="eng">=====WAIT TIME=====</h1>
+    <h1 id="wait">ここからの待ち時間</h1>
+    <div class="flex">
+      <h1 id="time">MIN</h1>
+      <div class="wait-time" id="remainingTime"></div>
+      <h1 id="time">分</h1>
+    </div>
+  </div>
+
+  <script src="script/timeshow.js">
+  </script>
+</body>
+
+</html>

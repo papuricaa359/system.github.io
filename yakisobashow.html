@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ログイン結果</title>
+  <link rel="stylesheet" href="style/yakisobashow.css">
+</head>
+
+<body>
+  <div id="result">
+    <div class="flex">
+      <p class="hidden">オーダーID:</p>
+      <p class="result-item" id="number"></p>
+    </div>
+    <p class="result-item" id="username"></p>
+  </div>
+  <p class="message hidden">下記の時間になりましたら店頭に<br>受け取りにお越しください。</p>
+  <div id="result-time">
+    <p class="result-item" id="time"></p>
+  </div>
+  <h1 class="hidden">注文内容</h1>
+  <div class="content hidden">
+    <img src="img/yakisoba.jpg">
+    <div class="text">
+      <h2>焼きそば</h2>
+      <div id="result-yakisoba">
+        <p class="result-item" id="yakisoba"></p>
+      </div>
+    </div>
+  </div>
+  <div class="content hidden">
+    <img src="img/egg.jpg">
+    <div class="text">
+      <h2>目玉焼き</h2>
+      <div id="result-egg">
+        <p class="result-item" id="egg"></p>
+      </div>
+    </div>
+  </div>
+  <button class="button-link hidden" onclick="window.location.href='yakisobatop.html';">トップに戻る</button>
+
+  <script src="script/yakisobashow.js">
+  </script>
+</body>
+
+</html>

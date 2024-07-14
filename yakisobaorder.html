@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>焼きそば</title>
+    <link rel="stylesheet" href="style/yakisobaorder.css">
+</head>
+
+<body>
+    <header>
+        <h1>大谷一平ちゃん（仮）</h1>
+    </header>
+    <div class="container">
+        <form id="registrationForm">
+            <h1>顧客情報</h1>
+            <div class="solid">
+                <p>ニックネームを入力してください。</p>
+                <div class="input-group">
+                    <input type="text" id="username" required placeholder="ニックネーム">
+                </div>
+            </div>
+            <div class="solid">
+                <p>受け取りたい時間を選択してください。</p>
+                <div class="input-group">
+                    <div class="flex">
+                        <select id="hour" required>
+                            <option value="00">00時</option>
+                            <option value="01">01時</option>
+                            <option value="02">02時</option>
+                            <option value="03">03時</option>
+                            <option value="04">04時</option>
+                            <option value="05">05時</option>
+                            <option value="06">06時</option>
+                            <option value="07">07時</option>
+                            <option value="08">08時</option>
+                            <option value="09">09時</option>
+                            <option value="10">10時</option>
+                            <option value="11">11時</option>
+                            <option value="12">12時</option>
+                            <option value="13">13時</option>
+                            <option value="14">14時</option>
+                            <option value="15">15時</option>
+                            <option value="16">16時</option>
+                            <option value="17">17時</option>
+                            <option value="18">18時</option>
+                            <option value="19">19時</option>
+                            <option value="20">20時</option>
+                            <option value="21">21時</option>
+                            <option value="22">22時</option>
+                            <option value="23">23時</option>
+                        </select>
+                        <select id="minute" required>
+                            <option value="00">00分</option>
+                            <option value="15">15分</option>
+                            <option value="30">30分</option>
+                            <option value="45">45分</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="regist">
+                <h1>商品登録</h1>
+                <p>欲しい商品の個数を選択してください</p>
+                <div class="product">
+                    <img src="img/yakisoba.jpg" alt="焼きそば">
+                    <h2>焼きそば</h2>
+                    <div class="flex">
+                        <p>￥400</p>
+                        <div class="input-group">
+                            <label for="yakisoba">数量</label>
+                            <select id="yakisoba" required onchange="updateSum()">
+                                <option value="1">1個</option>
+                                <option value="2">2個</option>
+                                <option value="3">3個</option>
+                                <option value="4">4個</option>
+                                <option value="5">5個</option>
+                                <option value="6">6個</option>
+                                <option value="7">7個</option>
+                                <option value="8">8個</option>
+                                <option value="9">9個</option>
+                                <option value="10">10個</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="img/egg.jpg" alt="目玉焼き">
+                    <h2>目玉焼き(オプション)</h2>
+                    <div class="flex">
+                        <p>￥50</p>
+                        <div class="input-group">
+                            <label for="egg">数量</label>
+                            <select id="egg" required onchange="updateSum()">
+                                <option value="0">0個</option>
+                                <option value="1">1個</option>
+                                <option value="2">2個</option>
+                                <option value="3">3個</option>
+                                <option value="4">4個</option>
+                                <option value="5">5個</option>
+                                <option value="6">6個</option>
+                                <option value="7">7個</option>
+                                <option value="8">8個</option>
+                                <option value="9">9個</option>
+                                <option value="10">10個</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="sum">
+                    <p>合計: <span id="totalAmount">400</span>円</p>
+                </div>
+            </div>
+            <button type="button" onclick="usercheck()">注文確定</button>
+        </form>
+    </div>
+    <footer>
+        <p>大谷一平ちゃん（仮）</p>
+    </footer>
+    <div class="overlay" id="overlay">
+        <div class="overlay-text">送信中...</div>
+    </div>
+    <script src="script/yakisobaorder.js">
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ログイン結果</title>
+  <link rel="stylesheet" href="style/fastpassshow.css">
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="card">
+      <img src="img/fastpassheader.jpg" alt="Fastpass Entrance">
+      <div class="card-content">
+        <h1 class="result-item" id="id"></h1>
+        <p class="message">下記の時間にファストパスエントランスからご入場ください</p>
+        <div id="result">
+          <h1 class="result-item" id="value"></h1>
+          <h1 class="result-item" id="username"></h1>
+          <h1 class="result-item" id="count"></h1>
+        </div>
+        <button class="button-link" onclick="window.location.href='fastpasstop.html';">トップに戻る</button>
+      </div>
+    </div>
+  </div>
+  <div id="error-container"></div>
+  <script src="script/fastpassshow.js">
+
+  </script>
+</body>
+
+</html>

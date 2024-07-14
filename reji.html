@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <title>レジ</title>
+    <link rel="stylesheet" href="style/reji.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <!--オーダーID-->
+            <input type="text" id="check" required placeholder="オーダーID">
+            <!--選択商品表示-->
+            <div class="prosele flex">
+                <div id="proname"></div>
+                <div id="proqty"></div>
+                <div id="ko">個</div>
+            </div>
+
+            <!--商品-->
+            <div class="product">
+                <button type="button" onclick="yakisoba()">焼きそば</button>
+                <button type="button" onclick="egg()">目玉焼き</button>
+            </div>
+        </div>
+
+        <div class="right">
+            <!--金額等表示-->
+            <div class="monyshow">
+                <div class="flex">
+                    <div class="name">合計</div>
+                    <div id="allqty">0</div>
+                    <div id="allq">個</div>
+                    <div id="allmoney">0</div>
+                </div>
+                <div class="flex">
+                    <div class="name">値引額</div>
+                    <div id="dismoney" class="showcont">0</div>
+                </div>
+                <div class="flex">
+                    <div class="name">支払総額</div>
+                    <div id="paymoney" class="showcont">0</div>
+                </div>
+                <div class="flex">
+                    <div class="name">預かり</div>
+                    <div id="depmoney" class="showcont">0</div>
+                </div>
+                <div class="flex">
+                    <div class="name">お釣り</div>
+                    <div id="chanmoney" class="showcont">0</div>
+                </div>
+            </div>
+            <!--テンキー-->
+            <div class="tenkey">
+                <div class="flex">
+                    <button class="cancel" id="cancel" type="button">C</button>
+                    <button class="number" id="number7" type="button">7</button>
+                    <button class="number" id="number8" type="button">8</button>
+                    <button class="number" id="number9" type="button">9</button>
+                    <button class="cancelTransaction" id="cancelTransaction" type="button">中止</button>
+                </div>
+                <div class="flex">
+                    <button class="confirm" id="discount" type="button">値<br>引</button>
+                    <div>
+                        <div class="flex">
+                            <button class="number" id="number4" type="button">4</button>
+                            <button class="number" id="number5" type="button">5</button>
+                            <button class="number" id="number6" type="button">6</button>
+                        </div>
+                        <div class="flex">
+                            <button class="number" id="number1" type="button">1</button>
+                            <button class="number" id="number2" type="button">2</button>
+                            <button class="number" id="number3" type="button">3</button>
+                        </div>
+                    </div>
+                    <button class="confirm" id="confirm" type="button">確<br>定</button>
+                </div>
+                <div class="flex">
+                    <button class="cancelTransaction" id="end" type="button">終了</button>
+                    <button class="number" id="number0" type="button">0</button>
+                    <button class="number" id="number00" type="button">00</button>
+                    <button class="wide" id="settlement" type="button">清算</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/reji.js">
+
+    </script>
+</body>
+
+</html>

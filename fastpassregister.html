@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ファストパス</title>
+    <link rel="stylesheet" href="style/fastpassregister.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <form id="registrationForm">
+                <h1>ファストパスを取得する</h1>
+                <div class="solid">
+                    <p>ニックネームを入力してください。</p>
+                    <div class="input-group">
+                        <input type="text" id="username" required placeholder="ニックネーム">
+                    </div>
+                </div>
+                <div class="solid">
+                    <p>入場したい時間を選択してください。</p>
+                    <div class="input-group input-flex">
+                        <select id="hour" required>
+                            <option value="00">00時</option>
+                            <option value="01">01時</option>
+                            <option value="02">02時</option>
+                            <option value="03">03時</option>
+                            <option value="04">04時</option>
+                            <option value="05">05時</option>
+                            <option value="06">06時</option>
+                            <option value="07">07時</option>
+                            <option value="08">08時</option>
+                            <option value="09">09時</option>
+                            <option value="10">10時</option>
+                            <option value="11">11時</option>
+                            <option value="12">12時</option>
+                            <option value="13">13時</option>
+                            <option value="14">14時</option>
+                            <option value="15">15時</option>
+                            <option value="16">16時</option>
+                            <option value="17">17時</option>
+                            <option value="18">18時</option>
+                            <option value="19">19時</option>
+                            <option value="20">20時</option>
+                            <option value="21">21時</option>
+                            <option value="22">22時</option>
+                            <option value="23">23時</option>
+                        </select>
+                        <select id="minute" required>
+                            <option value="00">00分</option>
+                            <option value="15">15分</option>
+                            <option value="30">30分</option>
+                            <option value="45">45分</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="solid">
+                    <div class="input-group">
+                        <label for="people">人数</label>
+                        <select id="people" required>
+                            <option value="1">1人</option>
+                            <option value="2">2人</option>
+                            <option value="3">3人</option>
+                            <option value="4">4人</option>
+                            <option value="5">5人</option>
+                            <option value="6">6人</option>
+                            <option value="7">7人</option>
+                            <option value="8">8人</option>
+                            <option value="9">9人</option>
+                            <option value="10">10人</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="button" onclick="usercheck()">確定</button>
+            </form>
+        </div>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="overlay-text">送信中...</div>
+    </div>
+    <script src="script/fastpassregister.js">
+
+    </script>
+</body>
+
+</html>
