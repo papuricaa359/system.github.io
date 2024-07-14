@@ -62,7 +62,7 @@ main {
 }
 
 main .container {
-    max-width: 1200px;
+    width: 80vw;
     margin: 0 auto;
     padding: 0 2rem;
 }
