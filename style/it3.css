@@ -28,7 +28,6 @@ header .container {
 }
 
 header h1 {
-
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -62,9 +61,8 @@ main {
 }
 
 main .container {
-    width: 80vw;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
 }
 
 .event-section,
@@ -117,7 +115,7 @@ main .container {
 .gallery-section h2 {
     color: #81d4fa;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 20px;
 }
 
 .event-section p,
@@ -148,6 +146,7 @@ main .container {
     padding: 1rem 2rem;
     font-size: 1rem;
     border-radius: 5px;
+    margin-top: 3px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -188,9 +187,8 @@ footer {
 }
 
 footer .container {
-    max-width: 1200px;
+   width: 100vw;
     margin: 0 auto;
-    padding: 0 2rem;
 }
 
 footer p {
@@ -208,7 +206,7 @@ footer p {
 
     .event-section h2,
     .gallery-section h2 {
-        font-size: 1rem;
+        font-size: 25px;
     }
 
     .event-section p,
