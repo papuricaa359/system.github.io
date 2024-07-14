@@ -117,7 +117,7 @@ main .container {
 .gallery-section h2 {
     color: #81d4fa;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .event-section p,
@@ -208,7 +208,7 @@ footer p {
 
     .event-section h2,
     .gallery-section h2 {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
 
     .event-section p,
